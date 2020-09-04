@@ -7,11 +7,10 @@
 
 import { Component, OnInit, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
-//import { MatDialogModule } from '@angular/material/dialog';
 import { IService } from '../services.interface';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-invoice-details-dialog.ts',
   templateUrl: './invoice-details-dialog.component.html',
   styleUrls: ['./invoice-details-dialog.component.css']
 })

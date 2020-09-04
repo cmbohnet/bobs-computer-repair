@@ -1,4 +1,4 @@
-<mat-dialog>
+<mat-card>
   <h3>
     Invoice Summary
   </h3>
@@ -6,7 +6,7 @@
 
   <mat-divider></mat-divider>
 
-  <mat-dialog-content>
+  <mat-card-content>
     <div fxLayout="column" class="invoice-details">
       <mat-list>
       <h4>Line Items</h4>
@@ -17,8 +17,8 @@
         <h4> Total Charges:  {{ this.invoice | currency }}  </h4>
       </mat-list>
     </div>
-  </mat-dialog-content>
-  <mat-dialog-actions align="end">
+  </mat-card-content>
+  <mat-card-actions align="end">
     <button mat-raised-button color="accent" matDialogClose="confirm">OK</button>
-  </mat-dialog-actions>
-</mat-dialog>
+  </mat-card-actions>
+</mat-card>

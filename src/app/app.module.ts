@@ -10,6 +10,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCardModule } from '@angular/material/card';
@@ -20,10 +21,11 @@ import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
-import { CookieService } from 'ngx-cookie-service';
+//import { CookieService } from 'ngx-cookie-service';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { MatDialogModule } from '@angular/material/dialog';
 import { InvoiceDetailsDialogComponent } from './invoice-details-dialog/invoice-details-dialog.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -44,11 +46,13 @@ import { InvoiceDetailsDialogComponent } from './invoice-details-dialog/invoice-
     MatInputModule,
     MatListModule,
     FormsModule,
+    ReactiveFormsModule,
     MatSelectModule,
     MatCheckboxModule,
-    ReactiveFormsModule,
+    MatIconModule,
+    MatTableModule
   ],
-  providers: [CookieService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
